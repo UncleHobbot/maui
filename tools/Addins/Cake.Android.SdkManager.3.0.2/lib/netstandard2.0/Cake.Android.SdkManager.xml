@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cake.Android.SdkManager</name>
+    </assembly>
+    <members>
+        <member name="T:Cake.AndroidSdkManager.AndroidSdkManagerAliases">
+            <summary>
+            Android SDK related aliases.
+            </summary>
+        </member>
+        <member name="M:Cake.AndroidSdkManager.AndroidSdkManagerAliases.AndroidSdkManagerUpdateAll(Cake.Core.ICakeContext,Cake.AndroidSdkManager.AndroidSdkManagerToolSettings)">
+            <summary>
+            Installs all available updates in the Android SDK.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="settings">The settings.</param>
+        </member>
+        <member name="M:Cake.AndroidSdkManager.AndroidSdkManagerAliases.AndroidSdkManagerInstall(Cake.Core.ICakeContext,System.Collections.Generic.IEnumerable{System.String},Cake.AndroidSdkManager.AndroidSdkManagerToolSettings)">
+            <summary>
+            Installs the specified Android SDK packages.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="packages">The packages to install.</param>
+            <param name="settings">The settings.</param>
+        </member>
+        <member name="M:Cake.AndroidSdkManager.AndroidSdkManagerAliases.AndroidSdkManagerUninstall(Cake.Core.ICakeContext,System.Collections.Generic.IEnumerable{System.String},Cake.AndroidSdkManager.AndroidSdkManagerToolSettings)">
+            <summary>
+            Uninstalls the specified Android SDK packages.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="packages">The packages to install.</param>
+            <param name="settings">The settings.</param>
+        </member>
+        <member name="M:Cake.AndroidSdkManager.AndroidSdkManagerAliases.AndroidSdkManagerList(Cake.Core.ICakeContext,Cake.AndroidSdkManager.AndroidSdkManagerToolSettings)">
+            <summary>
+            Gets a list of the Installed, Available and Updates for the Android SDK Manager.
+            </summary>
+            <returns>Installed, Available, and Available Updates for the Android SDK.</returns>
+            <param name="context">The context.</param>
+            <param name="settings">The settings.</param>
+        </member>
+        <member name="M:Cake.AndroidSdkManager.AndroidSdkManagerAliases.AndroidSdkManagerDownload(Cake.Core.ICakeContext,Cake.Core.IO.DirectoryPath,System.Version)">
+            <summary>
+            Downloads the Android SDK Manager.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="destinationDirectory">Destination directory, or ./tools/androidsdk if none is specified.</param>
+            <param name="specificVersion">Specific version, or latest available if none is specified.</param>
+        </member>
+        <member name="M:Cake.AndroidSdkManager.AndroidSdkManagerAliases.AcceptLicenses(Cake.Core.ICakeContext,Cake.AndroidSdkManager.AndroidSdkManagerToolSettings)">
+            <summary>
+            Accepts all licenses which are not yet accepted.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="settings">The settings.</param>
+        </member>
+        <member name="M:Cake.AndroidSdkManager.AndroidSdkDownloader.DownloadSdk(Cake.Core.ICakeContext,Cake.Core.IO.DirectoryPath,System.Version)">
+            <summary>
+            Downloads the Android SDK
+            </summary>
+            <param name="context">The context.</param>
+            <param name="destinationDirectory">Destination directory, or ./tools/androidsdk if none is specified.</param>
+            <param name="specificVersion">Specific version, or latest if none is specified.</param>
+        </member>
+        <member name="T:Cake.AndroidSdkManager.AndroidSdkManagerList">
+            <summary>
+            Encapsulates results from Android SDK Manager's listing
+            </summary>
+        </member>
+        <member name="P:Cake.AndroidSdkManager.AndroidSdkManagerList.AvailablePackages">
+            <summary>
+            Gets or sets the available packages to install.
+            </summary>
+            <value>The available packages.</value>
+        </member>
+        <member name="P:Cake.AndroidSdkManager.AndroidSdkManagerList.InstalledPackages">
+            <summary>
+            Gets or sets the already installed packages.
+            </summary>
+            <value>The installed packages.</value>
+        </member>
+        <member name="T:Cake.AndroidSdkManager.AndroidSdkManagerToolSettings">
+            <summary>
+            Android SDK Manager tool settings.
+            </summary>
+        </member>
+        <member name="P:Cake.AndroidSdkManager.AndroidSdkManagerToolSettings.SdkRoot">
+            <summary>
+            Gets or sets the Android SDK root path.
+            </summary>
+            <value>The sdk root.</value>
+        </member>
+        <member name="P:Cake.AndroidSdkManager.AndroidSdkManagerToolSettings.Channel">
+            <summary>
+            Gets or sets the release channel.
+            </summary>
+            <value>The channel.</value>
+        </member>
+        <member name="P:Cake.AndroidSdkManager.AndroidSdkManagerToolSettings.IncludeObsolete">
+            <summary>
+            Gets or sets a value indicating whether or not to include obsoleted packages.
+            </summary>
+            <value><c>true</c> if include obsoleted packages; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Cake.AndroidSdkManager.AndroidSdkManagerToolSettings.NoHttps">
+            <summary>
+            Gets or sets a value indicating whether HTTPS should be used.
+            </summary>
+            <value><c>true</c> if no HTTPS; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Cake.AndroidSdkManager.AndroidSdkManagerToolSettings.ProxyType">
+            <summary>
+            Gets or sets the type of the proxy to be used.
+            </summary>
+            <value>The type of the proxy.</value>
+        </member>
+        <member name="P:Cake.AndroidSdkManager.AndroidSdkManagerToolSettings.ProxyHost">
+            <summary>
+            Gets or sets the proxy host.
+            </summary>
+            <value>The proxy host.</value>
+        </member>
+        <member name="P:Cake.AndroidSdkManager.AndroidSdkManagerToolSettings.ProxyPort">
+            <summary>
+            Gets or sets the proxy port.
+            </summary>
+            <value>The proxy port.</value>
+        </member>
+        <member name="P:Cake.AndroidSdkManager.AndroidSdkManagerToolSettings.SkipVersionCheck">
+            <summary>
+            Gets or sets a value indicating whether to skip the sdkmanager version check.
+            By default, the sdkmanager version is checked before each invocation to ensure a new enough version is in use.
+            </summary>
+            <value><c>true</c> if skip version check; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:Cake.AndroidSdkManager.AndroidSdkManagerProxyType">
+            <summary>
+            Android SDK Manager proxy type.
+            </summary>
+        </member>
+        <member name="F:Cake.AndroidSdkManager.AndroidSdkManagerProxyType.None">
+            <summary>
+            Do not use a proxy.
+            </summary>
+        </member>
+        <member name="F:Cake.AndroidSdkManager.AndroidSdkManagerProxyType.Http">
+            <summary>
+            Use a HTTP proxy.
+            </summary>
+        </member>
+        <member name="F:Cake.AndroidSdkManager.AndroidSdkManagerProxyType.Socks">
+            <summary>
+            Use a SOCKS proxy.
+            </summary>
+        </member>
+        <member name="T:Cake.AndroidSdkManager.AndroidSdkChannel">
+            <summary>
+            Android SDK Manager release channel.
+            </summary>
+        </member>
+        <member name="F:Cake.AndroidSdkManager.AndroidSdkChannel.Stable">
+            <summary>
+            Stable packages.
+            </summary>
+        </member>
+        <member name="F:Cake.AndroidSdkManager.AndroidSdkChannel.Beta">
+            <summary>
+            Beta packages.
+            </summary>
+        </member>
+        <member name="F:Cake.AndroidSdkManager.AndroidSdkChannel.Dev">
+            <summary>
+            Developer packages.
+            </summary>
+        </member>
+        <member name="F:Cake.AndroidSdkManager.AndroidSdkChannel.Canary">
+            <summary>
+            Canary packages.
+            </summary>
+        </member>
+        <member name="T:Cake.AndroidSdkManager.AndroidSdkPackage">
+            <summary>
+            Android SDK Package Information.
+            </summary>
+        </member>
+        <member name="P:Cake.AndroidSdkManager.AndroidSdkPackage.Path">
+            <summary>
+            Gets or sets the SDK Manager path.
+            </summary>
+            <value>The path.</value>
+        </member>
+        <member name="P:Cake.AndroidSdkManager.AndroidSdkPackage.Version">
+            <summary>
+            Gets or sets the package version.
+            </summary>
+            <value>The version.</value>
+        </member>
+        <member name="P:Cake.AndroidSdkManager.AndroidSdkPackage.Description">
+            <summary>
+            Gets or sets the package description.
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="T:Cake.AndroidSdkManager.AvailableAndroidSdkUpdate">
+            <summary>
+            Available Android Sdk Update package information.
+            </summary>
+        </member>
+        <member name="P:Cake.AndroidSdkManager.AvailableAndroidSdkUpdate.Path">
+            <summary>
+            Gets or sets the Android SDK Manager path.
+            </summary>
+            <value>The path.</value>
+        </member>
+        <member name="P:Cake.AndroidSdkManager.AvailableAndroidSdkUpdate.Version">
+            <summary>
+            Gets or sets the available version of the package.
+            </summary>
+            <value>The installed version.</value>
+        </member>
+        <member name="P:Cake.AndroidSdkManager.AvailableAndroidSdkUpdate.Description">
+            <summary>
+            Gets or sets the package description.
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="T:Cake.AndroidSdkManager.InstalledAndroidSdkPackage">
+            <summary>
+            Installed Android SDK Package information.
+            </summary>
+        </member>
+        <member name="P:Cake.AndroidSdkManager.InstalledAndroidSdkPackage.Location">
+            <summary>
+            Gets or sets the Installed SDK package location.
+            </summary>
+            <value>The location.</value>
+        </member>
+        <member name="T:Cake.AndroidSdkManager.NamespaceDoc">
+            <summary>
+            This namespace contain types 
+            representing data used for interaction with the Android SDK manager.
+            </summary>
+        </member>
+    </members>
+</doc>

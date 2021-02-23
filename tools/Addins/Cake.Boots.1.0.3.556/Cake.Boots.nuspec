@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Cake.Boots</id>
+    <version>1.0.3.556</version>
+    <title>Cake.Boots</title>
+    <authors>Jonathan Peppers, Peter Collins</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>icon.png</icon>
+    <projectUrl>https://github.com/jonathanpeppers/boots</projectUrl>
+    <description>boots is a dotnet global tool for "bootstrapping" vsix &amp; pkg files.</description>
+    <copyright>2021 Jonathan Peppers, Peter Collins</copyright>
+    <tags>Bootstrap CI Xamarin Cake Azure DevOps</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Cake.Core" version="0.34.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
