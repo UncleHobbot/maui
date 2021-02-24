@@ -1,10 +1,15 @@
-﻿using Android.App;
+﻿using BpmsPOC;
+using Android.App;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using AndroidX.AppCompat.App;
-using BpmsPOC;
+using Xamarin.Forms;
+using AndroidX.Core.Widget;
 using Xamarin.Platform;
+using System.Threading.Tasks;
+using System;
+using System.Linq;
 
 namespace Sample.Droid
 {
@@ -31,6 +36,19 @@ namespace Sample.Droid
 			var view = app.CreateView();
 
 			Add(view);
+
+			//Task.Run(async () => {
+
+			//	await Task.Delay(5000).ConfigureAwait(false);
+
+			//	void addLabel()
+			//	{
+			//		((view as VerticalStackLayout).Children[1] as HorizontalStackLayout).Add(new Label { Text = "I show up after 5 seconds" });
+			//	};
+
+			//	new Handler(Looper.MainLooper).Post(addLabel);
+
+			//});
 		}
 
 		void Add(params IView[] views)

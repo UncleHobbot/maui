@@ -29,11 +29,11 @@ namespace BpmsPOC
 			var btnLog = new Button { Text = "Log" };
 			btnLog.Clicked += (sender, args) =>
 			{
-				//ClearLayout(field);
+				ClearLayout(field);
 				var lbl = new Label { Text = "Application Log", TextColor = Color.Black };
 				field.Add(lbl);
-				lbl.IsVisible = false;
-				lbl.IsVisible = true;
+				(lbl as VisualElement).IsVisible = false;
+				(lbl as VisualElement).IsVisible = true;
 			};
 
 			var btnForm = new Button { Text = "Form" };

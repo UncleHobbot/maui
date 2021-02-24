@@ -18,7 +18,7 @@
 	</ItemGroup>
 	<PropertyGroup>
     <GitInfoReportImportance>high</GitInfoReportImportance>
-    <AssemblyVersion>1.0.21054.10</AssemblyVersion>
-    <FileVersion>1.0.21054.10</FileVersion>
+    <AssemblyVersion>1.0.21054.12</AssemblyVersion>
+    <FileVersion>1.0.21054.12</FileVersion>
   </PropertyGroup>
 </Project>

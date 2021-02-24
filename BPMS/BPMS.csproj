@@ -3,8 +3,8 @@
         <TargetFrameworks>net6.0-android;</TargetFrameworks>
     <RootNamespace>BpmsPOC</RootNamespace>
     <AssemblyName>BpmsPOC</AssemblyName>
-    <AssemblyVersion>1.0.21054.20</AssemblyVersion>
-    <FileVersion>1.0.21054.20</FileVersion>
+    <AssemblyVersion>1.0.21054.24</AssemblyVersion>
+    <FileVersion>1.0.21054.24</FileVersion>
   </PropertyGroup>
   <Import Project="..\.nuspec\Xamarin.Forms.MultiTargeting.targets" />
   <ItemGroup>
